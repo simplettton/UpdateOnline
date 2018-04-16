@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+NSString * const KOpenFileNotification = @"KOpenFileNotification";
+NSString * const KFileName = @"KFileName";
+NSString * const KFilePath = @"KFilePath";
+NSString * const DEFAULTHostSetting = @"10.10.100.254";
+NSString * const DEFAULTPortSetting = @"8080";
 
 @interface AppDelegate ()
 
@@ -16,10 +21,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self configAirWaveNetworkSetting];
     return YES;
 }
-
+-(void)configAirWaveNetworkSetting
+{
+    self.host = DEFAULTHostSetting;
+    self.port = DEFAULTPortSetting;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -45,6 +54,46 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+        if (url)
+        {
+            NSFileManager *fileManager = [NSFileManager defaultManager];
+            NSString *fileNameStr = [url lastPathComponent];
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            //documents路径
+            NSString *documents = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+
+            //documents有文件则删除
+            NSDirectoryEnumerator *enumerator = [[NSFileManager defaultManager]enumeratorAtPath:documents];
+            if(enumerator !=nil)
+            {
+                for (NSString *fileName in enumerator)
+                {
+                    BOOL isDirectory = NO;
+                    [[NSFileManager defaultManager] fileExistsAtPath:[documents stringByAppendingPathComponent:fileName] isDirectory:&isDirectory];
+                    if (!isDirectory)
+                    {
+                          [fileManager removeItemAtPath:[documents stringByAppendingPathComponent:fileName] error:nil];
+                    }
+                }
+            }
+            NSString *documentPath = [documents stringByAppendingPathComponent:fileNameStr];
+//            if (![fileManager fileExistsAtPath:documentPath])
+//            {
+//                [fileManager createFileAtPath:documentPath contents:nil attributes:nil];
+//            }
+            //保存新文件
+            BOOL success = [data writeToFile:documentPath atomically:YES];
+            if (success)
+            {
+                //写入成功发送通知
+                NSDictionary *dict= @{KFilePath:documentPath,KFileName:fileNameStr};
+                [[NSNotificationCenter defaultCenter]postNotificationName:KOpenFileNotification object:nil userInfo:dict];
+            }
+        }
+    return YES;
 }
 
 

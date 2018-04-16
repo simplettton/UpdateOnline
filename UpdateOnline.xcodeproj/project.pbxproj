@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041607041FE3C9B7003AFB31 /* AirWaveNetworkSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041607031FE3C9B7003AFB31 /* AirWaveNetworkSettingViewController.m */; };
 		0435A6831FE26F560022FC0E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435A6821FE26F560022FC0E /* AppDelegate.m */; };
 		0435A6861FE26F560022FC0E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435A6851FE26F560022FC0E /* ViewController.m */; };
 		0435A6891FE26F560022FC0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0435A6871FE26F560022FC0E /* Main.storyboard */; };
@@ -15,6 +16,10 @@
 		0435A6911FE26F560022FC0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435A6901FE26F560022FC0E /* main.m */; };
 		0435A69B1FE26F560022FC0E /* UpdateOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435A69A1FE26F560022FC0E /* UpdateOnlineTests.m */; };
 		0435A6A61FE26F570022FC0E /* UpdateOnlineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435A6A51FE26F570022FC0E /* UpdateOnlineUITests.m */; };
+		046FE3181FE4D203006517F1 /* Pack.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FE3161FE4D203006517F1 /* Pack.m */; };
+		046FE31B1FE5108D006517F1 /* ViewClickEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 046FE31A1FE5108D006517F1 /* ViewClickEffect.m */; };
+		047710681FE75BCB00D6EE71 /* Unpack.m in Sources */ = {isa = PBXBuildFile; fileRef = 047710671FE75BCB00D6EE71 /* Unpack.m */; };
+		5B3CFCA447D0F69F6A8DDF84 /* libPods-UpdateOnline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7EC3099010224A8839313B3 /* libPods-UpdateOnline.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041607031FE3C9B7003AFB31 /* AirWaveNetworkSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirWaveNetworkSettingViewController.m; sourceTree = "<group>"; };
+		041607051FE3C9C0003AFB31 /* AirWaveNetworkSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirWaveNetworkSettingViewController.h; sourceTree = "<group>"; };
 		0435A67E1FE26F560022FC0E /* UpdateOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpdateOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0435A6811FE26F560022FC0E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0435A6821FE26F560022FC0E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,16 @@
 		0435A6A11FE26F570022FC0E /* UpdateOnlineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpdateOnlineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0435A6A51FE26F570022FC0E /* UpdateOnlineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateOnlineUITests.m; sourceTree = "<group>"; };
 		0435A6A71FE26F570022FC0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046FE3151FE4B70C006517F1 /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		046FE3161FE4D203006517F1 /* Pack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pack.m; sourceTree = "<group>"; };
+		046FE3171FE4D203006517F1 /* Pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pack.h; sourceTree = "<group>"; };
+		046FE3191FE5108D006517F1 /* ViewClickEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewClickEffect.h; sourceTree = "<group>"; };
+		046FE31A1FE5108D006517F1 /* ViewClickEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewClickEffect.m; sourceTree = "<group>"; };
+		047710661FE75BCA00D6EE71 /* Unpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unpack.h; sourceTree = "<group>"; };
+		047710671FE75BCB00D6EE71 /* Unpack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unpack.m; sourceTree = "<group>"; };
+		A0F309A13C5C87B962C7E574 /* Pods-UpdateOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdateOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-UpdateOnline/Pods-UpdateOnline.release.xcconfig"; sourceTree = "<group>"; };
+		C7D7EB548CA1544DFED8B313 /* Pods-UpdateOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UpdateOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UpdateOnline/Pods-UpdateOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		E7EC3099010224A8839313B3 /* libPods-UpdateOnline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UpdateOnline.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3CFCA447D0F69F6A8DDF84 /* libPods-UpdateOnline.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +103,8 @@
 				0435A6991FE26F560022FC0E /* UpdateOnlineTests */,
 				0435A6A41FE26F570022FC0E /* UpdateOnlineUITests */,
 				0435A67F1FE26F560022FC0E /* Products */,
+				DBD9CB73A947DECC2637C3B0 /* Pods */,
+				47AAAB878611F8F0FD13BD09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +123,17 @@
 			children = (
 				0435A6811FE26F560022FC0E /* AppDelegate.h */,
 				0435A6821FE26F560022FC0E /* AppDelegate.m */,
+				046FE3151FE4B70C006517F1 /* HeaderFile.h */,
 				0435A6841FE26F560022FC0E /* ViewController.h */,
 				0435A6851FE26F560022FC0E /* ViewController.m */,
+				041607051FE3C9C0003AFB31 /* AirWaveNetworkSettingViewController.h */,
+				041607031FE3C9B7003AFB31 /* AirWaveNetworkSettingViewController.m */,
+				046FE3171FE4D203006517F1 /* Pack.h */,
+				046FE3161FE4D203006517F1 /* Pack.m */,
+				047710661FE75BCA00D6EE71 /* Unpack.h */,
+				047710671FE75BCB00D6EE71 /* Unpack.m */,
+				046FE3191FE5108D006517F1 /* ViewClickEffect.h */,
+				046FE31A1FE5108D006517F1 /* ViewClickEffect.m */,
 				0435A6871FE26F560022FC0E /* Main.storyboard */,
 				0435A68A1FE26F560022FC0E /* Assets.xcassets */,
 				0435A68C1FE26F560022FC0E /* LaunchScreen.storyboard */,
@@ -132,6 +161,23 @@
 			path = UpdateOnlineUITests;
 			sourceTree = "<group>";
 		};
+		47AAAB878611F8F0FD13BD09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7EC3099010224A8839313B3 /* libPods-UpdateOnline.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBD9CB73A947DECC2637C3B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EB548CA1544DFED8B313 /* Pods-UpdateOnline.debug.xcconfig */,
+				A0F309A13C5C87B962C7E574 /* Pods-UpdateOnline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0435A6AA1FE26F570022FC0E /* Build configuration list for PBXNativeTarget "UpdateOnline" */;
 			buildPhases = (
+				93C059A656E8F85CAB8CD6C1 /* [CP] Check Pods Manifest.lock */,
 				0435A67A1FE26F560022FC0E /* Sources */,
 				0435A67B1FE26F560022FC0E /* Frameworks */,
 				0435A67C1FE26F560022FC0E /* Resources */,
+				78F9E60222087671A7AF9070 /* [CP] Embed Pods Frameworks */,
+				72763E4ACB7EC52885E6EF5D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,13 +309,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		72763E4ACB7EC52885E6EF5D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UpdateOnline/Pods-UpdateOnline-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UpdateOnline/Pods-UpdateOnline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F9E60222087671A7AF9070 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UpdateOnline/Pods-UpdateOnline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93C059A656E8F85CAB8CD6C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UpdateOnline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0435A67A1FE26F560022FC0E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047710681FE75BCB00D6EE71 /* Unpack.m in Sources */,
+				046FE31B1FE5108D006517F1 /* ViewClickEffect.m in Sources */,
+				046FE3181FE4D203006517F1 /* Pack.m in Sources */,
 				0435A6861FE26F560022FC0E /* ViewController.m in Sources */,
 				0435A6911FE26F560022FC0E /* main.m in Sources */,
+				041607041FE3C9B7003AFB31 /* AirWaveNetworkSettingViewController.m in Sources */,
 				0435A6831FE26F560022FC0E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -428,13 +535,14 @@
 		};
 		0435A6AB1FE26F570022FC0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7D7EB548CA1544DFED8B313 /* Pods-UpdateOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUWZ3JRNLN;
 				INFOPLIST_FILE = UpdateOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lifotronic.UpdateOnline;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lifotronic.UpdateOnlineP01B;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,13 +550,14 @@
 		};
 		0435A6AC1FE26F570022FC0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F309A13C5C87B962C7E574 /* Pods-UpdateOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UUWZ3JRNLN;
 				INFOPLIST_FILE = UpdateOnline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lifotronic.UpdateOnline;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lifotronic.UpdateOnlineP01B;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
